@@ -32,15 +32,24 @@ This should download the source into a directory called `my-plugin`.
 `$ cd my-plugin`
 
 Next, we'll want to rename the relevant files and contents.
+
 Rename metadata/example-plugin.xml to metadata/my-plugin.xml:
+
 `$ mv metadata/example-plugin.xml metadata/my-plugin.xml`
+
 Rename src/example-plugin.cpp to src/my-plugin.cpp:
+
 `$ mv src/example-plugin.cpp src/my-plugin.cpp`
+
 Edit `meson.build` and change the instance of `example-plugin` to `my-plugin`.
+
 Edit `metadata/meson.build` and change the instance of `example-plugin.xml` to `my-plugin.xml`.
+
 Edit `src/meson.build` and change the instance of `example-plugin.cpp` to `my-plugin.cpp`.
+
 Edit `metadata/my-plugin.xml` and change the instance of `example-plugin` to `my-plugin`,
 and `Example Plugin` to `My Plugin`.
+
 Edit `src/my-plugin.cpp` and change all instances of `wayfire_example_plugin` to `wayfire_my_plugin`.
 
 Finally, remove the build directory, rebuild and test.
